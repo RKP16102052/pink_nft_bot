@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pink NFT</title>
+    <link rel="stylesheet" href="/webapp/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="app-shell">
+        <header class="topbar">
+            <div>
+                <p class="brand-kicker">Pink NFT</p>
+                <h1>Биржа NFT-подарков</h1>
+            </div>
+            <div class="wallet-cluster">
+                <div id="ton-connect-button" class="ton-connect"></div>
+                <div id="user-info" class="user-chip"></div>
+            </div>
+        </header>
+
+        <nav class="tabs" aria-label="Разделы">
+            <button id="tab-market" class="tab is-active" type="button">Маркет</button>
+            <button id="tab-my" class="tab" type="button">Мои NFT</button>
+            <button id="tab-admin" class="tab" type="button" hidden>Админ</button>
+        </nav>
+
+        <main id="content" class="content"></main>
+    </div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="https://unpkg.com/@tonconnect/ui@2.4.1/dist/tonconnect-ui.min.js"></script>
+    <script src="/webapp/app.js"></script>
+</body>
+</html>
